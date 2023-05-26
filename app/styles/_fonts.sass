@@ -1,0 +1,14 @@
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+		font-display: swap
+
+@include font('Exo2', normal, 300, '../fonts/Exo2/Exo2-Light.woff2')
+@include font('Exo2', normal, 400, '../fonts/Exo2/Exo2-Regular.woff2')
+@include font('Exo2', italic, 400, '../fonts/Exo2/Exo2-Italic.woff2')
+@include font('Exo2', normal, 500, '../fonts/Exo2/Exo2-Medium.woff2')
+@include font('Exo2', normal, 600, '../fonts/Exo2/Exo2-SemiBold.woff2')
+@include font('Exo2', normal, 700, '../fonts/Exo2/Exo2-Bold.woff2')

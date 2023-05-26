@@ -1,0 +1,55 @@
+@import 'vars'
+@import 'fonts'
+@import 'libs'
+
+// General settings
+::placeholder
+	color: $placeholder
+	transition: .3s
+
+::selection
+	background-color: $accent
+	color: $w-color
+
+input, textarea, button, select
+	outline: none
+	&:focus
+		outline: none
+
+input, textarea
+	&:focus
+		&::placeholder
+			opacity: 0
+
+body
+	font-family: $custom-font
+	font-size: $font-size
+	line-height: $line-height
+	color: $text
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+button
+	border: none
+	padding: 0
+	background-color: transparent
+	cursor: pointer
+
+strong, b
+	font-weight: $bd-font
+
+img
+	display: block
+	height: auto
+	max-width: 100%
+
+a
+	color: inherit
+	transition: .3s
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: inherit
+
+@import 'general'

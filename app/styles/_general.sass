@@ -1,0 +1,93 @@
+.w-color
+	color: $w-color
+.b-color
+	color: $b-color
+.accent-color
+	color: $accent
+.text-color
+	color: $text
+
+.link,
+.btn
+	transition: .3s
+	cursor: pointer
+	display: inline-flex
+	align-items: center
+	justify-content: center
+
+.link
+	&-accent
+		color: $accent
+		&:hover
+			opacity: 0.7
+			
+.hidden
+	display: none
+
+.logo
+	display: block
+
+.th-font
+	font-weight: 100
+.xlt-font
+	font-weight: 200
+.lt-font
+	font-weight: 300
+.re-font
+	font-weight: 400
+.md-font
+	font-weight: 500
+.sb-font
+	font-weight: 600
+.bd-font
+	font-weight: 700
+.xbd-font
+	font-weight: 800
+.bk-font
+	font-weight: 900
+
+.container
+	&-relative
+		position: relative
+
+.img
+	&-crop
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center
+	&-fill
+		position: absolute
+		max-width: 100%
+		max-height: 100%
+		width: auto
+		height: auto
+		margin: auto
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+
+.tooltipster
+	&-sidetip
+		.tooltipster
+			&-box
+				border: 0
+				background-color: $text
+			&-content
+				color: $w-color
+				font-size: 14px
+				line-height: unset
+				text-align: center
+				padding: 6px 8px
+				font-family: $custom-font
+		&.tooltipster
+			&-top
+				.tooltipster
+					&-arrow
+						&-border
+							border-top-color: transparent
+						&-background
+							border-top-color: $text
